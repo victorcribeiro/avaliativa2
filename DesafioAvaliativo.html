@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        
+
+        .container{
+            background-color:white;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            
+        }
+
+        .cabecalho{
+            background-color: rgb(42, 44, 165);;
+            
+            color: white;
+            padding: 30px;
+            
+        }
+        .ilustrativo{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .ilustrativo h1{
+            font-weight: bold;
+
+        }
+
+        .menu{
+            display: flex;
+            background-color: black;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .corpo{
+            display: flex;
+            background-color: white;
+
+
+        }
+
+        .lateral{
+            flex: 25%;
+            padding: 10px;
+            background-color:aliceblue;
+
+        }
+        .quadrado1{
+            height: 200px;
+            width: 80;
+            background-color: gray;
+            padding: 10px;
+        }
+        
+        .conteudo{
+            flex:75%;
+        }
+        .quadrado2{
+            height: 200px;
+            width: 80;
+            background-color: gray;
+            padding: 10px;
+        }
+
+
+
+        .rodape{
+
+            background-color: grey;
+            display: flex;
+            padding: 20px;
+           justify-content: center;
+        }
+
+        /* Ajustes de responssividade: */
+        @media screen and (max-width:650px){
+            
+            .container{
+                width:100%;
+            }
+            .menu{
+                flex-direction: column;
+            }
+            .menu a{
+                text-align: center;
+            }
+            .corpo{
+                flex-direction: column;
+            }
+            .conteudo{
+                order:2;
+            }
+            .lateral{
+                order: 1;
+            }
+
+
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <div class="ilustrativo">
+                <h1>Senac São Paulo</h1>
+
+                <p>Desenvolvimento de layaout com <b>flex</b> layout</p>
+
+            </div>
+        </div>
+
+
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">Loja</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Contatos</a>
+
+        </div>
+        
+
+        <div class="corpo">
+
+            <div class="lateral">
+                <h1> O Senac</h1>
+                <div class="quadrado1">
+                    Foto
+                </div>
+            
+
+                <p>Um texto aletório qualquer.</p>
+            </div>
+            
+
+
+
+
+            <div class="conteudo">
+                <h2>TITULO DA POSTAGEM</h2>
+                <p><b>Estevao Rada,Dec 25, 2032</b></p>
+                <div class="quadrado2">
+                    Foto
+                </div>
+               
+    
+                <p> Um texto lorem ipsum qualquer.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolorum illum similique voluptas
+                    consequatur nobis molestiae ut quisquam corporis praesentium aperiam ducimus quidem minus error,
+                    quod eveniet perferendis reiciendis fugit!</p>
+
+            </div>
+            
+        </div>
+
+        <div class="rodape">
+            <p>&copy; <b>Senac - 2032</b>.</p>
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
